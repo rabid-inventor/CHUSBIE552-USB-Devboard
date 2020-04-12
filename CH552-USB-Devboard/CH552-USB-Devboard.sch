@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:CH552-USB-Devboard-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -58,23 +59,12 @@ F 3 "" H 8350 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_A J3
-U 1 1 5E91FC86
-P 7750 1350
-F 0 "J3" H 7805 1817 50  0000 C CNN
-F 1 "USB_A" H 7805 1726 50  0000 C CNN
-F 2 "Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal" H 7900 1300 50  0001 C CNN
-F 3 " ~" H 7900 1300 50  0001 C CNN
-	1    7750 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_Push SW1
 U 1 1 5E91FDDD
 P 1500 2000
 F 0 "SW1" H 1500 2285 50  0000 C CNN
 F 1 "SW_Push" H 1500 2194 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 1500 2200 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_PTS810" H 1500 2200 50  0001 C CNN
 F 3 "" H 1500 2200 50  0001 C CNN
 	1    1500 2000
 	1    0    0    -1  
@@ -609,7 +599,7 @@ U 1 1 5E94BC64
 P 4050 2050
 F 0 "SW2" V 4096 2002 50  0000 R CNN
 F 1 "SW_Push" V 4005 2002 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 4050 2250 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_PTS810" H 4050 2250 50  0001 C CNN
 F 3 "" H 4050 2250 50  0001 C CNN
 	1    4050 2050
 	0    -1   -1   0   
@@ -855,4 +845,15 @@ Wire Wire Line
 Connection ~ 3100 3200
 Wire Wire Line
 	3100 3200 3100 3400
+$Comp
+L Connector:USB_B_Micro J3
+U 1 1 5E92FB1C
+P 7750 1350
+F 0 "J3" H 7805 1817 50  0000 C CNN
+F 1 "USB_B_Micro" H 7805 1726 50  0000 C CNN
+F 2 "digikey-footprints:USB_Micro_B_Female_10118193-0001LF" H 7900 1300 50  0001 C CNN
+F 3 "~" H 7900 1300 50  0001 C CNN
+	1    7750 1350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
