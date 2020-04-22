@@ -110,8 +110,6 @@ F 3 "~" H 10000 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10150 1500 10350 1500
-Wire Wire Line
-	10550 1500 10800 1500
 $Comp
 L Device:R_Small R5
 U 1 1 5E920474
@@ -139,7 +137,7 @@ Wire Wire Line
 Wire Wire Line
 	10550 1800 10800 1800
 Wire Wire Line
-	10800 1150 10800 1800
+	10800 1150 10800 1500
 Wire Wire Line
 	9850 1800 9550 1800
 Wire Wire Line
@@ -854,6 +852,22 @@ F 1 "USB_B_Micro" H 7805 1726 50  0000 C CNN
 F 2 "digikey-footprints:USB_Micro_B_Female_10118193-0001LF" H 7900 1300 50  0001 C CNN
 F 3 "~" H 7900 1300 50  0001 C CNN
 	1    7750 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 1500 10800 1500
+Connection ~ 10800 1500
+Wire Wire Line
+	10800 1500 10800 1800
+$Comp
+L power:VCC #PWR?
+U 1 1 5EA08550
+P 10800 800
+F 0 "#PWR?" H 10800 650 50  0001 C CNN
+F 1 "VCC" H 10817 973 50  0000 C CNN
+F 2 "" H 10800 800 50  0001 C CNN
+F 3 "" H 10800 800 50  0001 C CNN
+	1    10800 800 
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
