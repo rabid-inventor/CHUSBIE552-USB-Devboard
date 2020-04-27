@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ArtandSilks)(type KiCad)(uri ${KIPRJMOD}/ArtandSilks)(options "")(descr ""))
+)
