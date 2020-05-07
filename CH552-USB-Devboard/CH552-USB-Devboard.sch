@@ -486,17 +486,6 @@ P3.6
 Text Label 8500 1450 2    50   ~ 0
 P3.7
 $Comp
-L Device:R_Small R1
-U 1 1 5E93B481
-P 800 1800
-F 0 "R1" H 741 1754 50  0000 R CNN
-F 1 "10k" H 741 1845 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 800 1800 50  0001 C CNN
-F 3 "~" H 800 1800 50  0001 C CNN
-	1    800  1800
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C3
 U 1 1 5E93B52B
 P 4450 1500
@@ -523,12 +512,6 @@ F 3 "~" H 1850 2000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	800  1900 800  2000
-Wire Wire Line
-	800  2000 1300 2000
-Wire Wire Line
-	800  1700 800  1350
-Wire Wire Line
 	1850 1800 1850 1650
 Wire Wire Line
 	1850 1650 2650 1650
@@ -536,17 +519,6 @@ Wire Wire Line
 	1850 2200 1850 2300
 Wire Wire Line
 	1850 2300 2650 2300
-$Comp
-L power:VCC #PWR0113
-U 1 1 5E9432E6
-P 800 1350
-F 0 "#PWR0113" H 800 1200 50  0001 C CNN
-F 1 "VCC" H 817 1523 50  0000 C CNN
-F 2 "" H 800 1350 50  0001 C CNN
-F 3 "" H 800 1350 50  0001 C CNN
-	1    800  1350
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R2
 U 1 1 5E9433DF
@@ -879,6 +851,21 @@ F 1 "GND" H 10855 2327 50  0000 C CNN
 F 2 "" H 10850 2500 50  0001 C CNN
 F 3 "" H 10850 2500 50  0001 C CNN
 	1    10850 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  2000 850  2350
+Wire Wire Line
+	850  2000 1300 2000
+$Comp
+L power:GND #PWR?
+U 1 1 5EB4598F
+P 850 2350
+F 0 "#PWR?" H 850 2100 50  0001 C CNN
+F 1 "GND" H 855 2177 50  0000 C CNN
+F 2 "" H 850 2350 50  0001 C CNN
+F 3 "" H 850 2350 50  0001 C CNN
+	1    850  2350
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
