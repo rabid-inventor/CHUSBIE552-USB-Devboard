@@ -341,8 +341,6 @@ Text Label 5200 5050 2    50   ~ 0
 P1.3
 Text Label 5200 5200 2    50   ~ 0
 P1.4
-Text Label 2650 2300 2    50   ~ 0
-P1.5
 Text Label 5200 5500 2    50   ~ 0
 P1.6
 Text Label 5200 5650 2    50   ~ 0
@@ -500,38 +498,8 @@ Text Label 5100 1850 2    50   ~ 0
 RESET
 Text Label 2650 1650 2    50   ~ 0
 P3.6
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP1
-U 1 1 5E93B8DD
-P 1850 2000
-F 0 "JP1" V 1804 2067 50  0000 L CNN
-F 1 "SolderJumper_3_Bridged12" V 1895 2067 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 1850 2000 50  0001 C CNN
-F 3 "~" H 1850 2000 50  0001 C CNN
-	1    1850 2000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1850 1800 1850 1650
 Wire Wire Line
 	1850 1650 2650 1650
-Wire Wire Line
-	1850 2200 1850 2300
-Wire Wire Line
-	1850 2300 2650 2300
-$Comp
-L Device:R_Small R2
-U 1 1 5E9433DF
-P 4050 1500
-F 0 "R2" H 3991 1454 50  0000 R CNN
-F 1 "10k" H 3991 1545 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4050 1500 50  0001 C CNN
-F 3 "~" H 4050 1500 50  0001 C CNN
-	1    4050 1500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4050 1600 4050 1850
 Wire Wire Line
 	4050 1850 4450 1850
 Wire Wire Line
@@ -540,12 +508,9 @@ Connection ~ 4450 1850
 Wire Wire Line
 	4450 1850 5100 1850
 Wire Wire Line
-	4050 1400 4050 1050
-Wire Wire Line
 	4050 1050 4450 1050
 Wire Wire Line
 	4450 1050 4450 1400
-Connection ~ 4050 1050
 Wire Wire Line
 	4050 1050 4050 850 
 $Comp
@@ -562,15 +527,14 @@ $EndComp
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5E94BC64
-P 4050 2050
-F 0 "SW2" V 4096 2002 50  0000 R CNN
-F 1 "SW_Push" V 4005 2002 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_SPST_PTS810" H 4050 2250 50  0001 C CNN
-F 3 "" H 4050 2250 50  0001 C CNN
-	1    4050 2050
+P 4050 1400
+F 0 "SW2" V 4096 1352 50  0000 R CNN
+F 1 "SW_Push" V 4005 1352 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_SPST_PTS810" H 4050 1600 50  0001 C CNN
+F 3 "" H 4050 1600 50  0001 C CNN
+	1    4050 1400
 	0    -1   -1   0   
 $EndComp
-Connection ~ 4050 1850
 Wire Wire Line
 	4050 2250 4050 2550
 $Comp
@@ -732,7 +696,7 @@ Wire Wire Line
 Connection ~ 7750 1950
 Wire Wire Line
 	7750 1950 7750 2150
-Text Notes 3850 2000 2    79   ~ 0
+Text Notes 3800 1400 2    79   ~ 0
 Reset\n
 Text Label 2550 2850 2    50   ~ 0
 P1.2
@@ -854,18 +818,27 @@ F 3 "" H 10850 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  2000 850  2350
+	4050 1050 4050 1200
+Connection ~ 4050 1050
 Wire Wire Line
-	850  2000 1300 2000
+	4050 1600 4050 1850
+Wire Wire Line
+	800  1550 800  2000
+Wire Wire Line
+	800  2000 1300 2000
+Wire Wire Line
+	1700 2000 1850 2000
+Wire Wire Line
+	1850 1650 1850 2000
 $Comp
-L power:GND #PWR?
-U 1 1 5EB4598F
-P 850 2350
-F 0 "#PWR?" H 850 2100 50  0001 C CNN
-F 1 "GND" H 855 2177 50  0000 C CNN
-F 2 "" H 850 2350 50  0001 C CNN
-F 3 "" H 850 2350 50  0001 C CNN
-	1    850  2350
+L power:+3V3 #PWR?
+U 1 1 5EC0190F
+P 800 1550
+F 0 "#PWR?" H 800 1400 50  0001 C CNN
+F 1 "+3V3" H 815 1723 50  0000 C CNN
+F 2 "" H 800 1550 50  0001 C CNN
+F 3 "" H 800 1550 50  0001 C CNN
+	1    800  1550
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
