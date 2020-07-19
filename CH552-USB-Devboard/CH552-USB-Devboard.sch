@@ -314,9 +314,9 @@ Wire Wire Line
 	6700 5950 7300 5950
 Wire Wire Line
 	6700 6100 7300 6100
-Text Label 6700 5950 0    50   ~ 0
-P3.0
 Text Label 6700 6100 0    50   ~ 0
+P3.0
+Text Label 6700 5950 0    50   ~ 0
 P3.1
 Text Label 6700 5050 0    50   ~ 0
 P3.2
@@ -478,28 +478,6 @@ Text Label 5200 5350 2    50   ~ 0
 P1.5
 Text Notes 1950 1550 2    79   ~ 0
 Bootloader select\n
-$Comp
-L Connector:Conn_01x10_Male J1
-U 1 1 5E95A072
-P 7150 4100
-F 0 "J1" H 7256 4678 50  0000 C CNN
-F 1 "Conn_01x10_Male" H 7256 4587 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 7150 4100 50  0001 C CNN
-F 3 "~" H 7150 4100 50  0001 C CNN
-	1    7150 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x10_Male J2
-U 1 1 5E95A1BA
-P 8900 4100
-F 0 "J2" H 9006 4678 50  0000 C CNN
-F 1 "Conn_01x10_Male" H 9006 4587 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 8900 4100 50  0001 C CNN
-F 3 "~" H 8900 4100 50  0001 C CNN
-	1    8900 4100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7350 3900 7950 3900
 Wire Wire Line
@@ -764,7 +742,7 @@ U 1 1 5F0EEE62
 P 5650 2150
 F 0 "J3" H 5755 3717 50  0000 C CNN
 F 1 "USB_C_Receptacle" H 5755 3626 50  0000 C CNN
-F 2 "" H 5800 2150 50  0001 C CNN
+F 2 "footprint:VACON_CSP_USC16_TR" H 5800 2150 50  0001 C CNN
 F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 5800 2150 50  0001 C CNN
 	1    5650 2150
 	1    0    0    -1  
@@ -1001,7 +979,7 @@ U 1 1 5F1A134B
 P 8250 1150
 F 0 "JP1" H 8250 1414 50  0000 C CNN
 F 1 "Jumper" H 8250 1323 50  0000 C CNN
-F 2 "" H 8250 1150 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8250 1150 50  0001 C CNN
 F 3 "~" H 8250 1150 50  0001 C CNN
 	1    8250 1150
 	1    0    0    -1  
@@ -1012,7 +990,7 @@ U 1 1 5F1A13E3
 P 8250 1500
 F 0 "JP2" H 8250 1764 50  0000 C CNN
 F 1 "Jumper" H 8250 1673 50  0000 C CNN
-F 2 "" H 8250 1500 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8250 1500 50  0001 C CNN
 F 3 "~" H 8250 1500 50  0001 C CNN
 	1    8250 1500
 	1    0    0    -1  
@@ -1039,7 +1017,7 @@ U 1 1 5F1BBBBE
 P 3650 3450
 F 0 "Q1" V 3900 3450 50  0000 C CNN
 F 1 "CPH6337" V 3991 3450 50  0000 C CNN
-F 2 "" H 3850 3550 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 3850 3550 50  0001 C CNN
 F 3 "~" H 3650 3450 50  0001 C CNN
 	1    3650 3450
 	0    -1   1    0   
@@ -1082,7 +1060,7 @@ U 1 1 5F141ABF
 P 10050 2950
 F 0 "D4" H 10050 3166 50  0000 C CNN
 F 1 "D_ALT" H 10050 3075 50  0000 C CNN
-F 2 "" H 10050 2950 50  0001 C CNN
+F 2 "Diode_SMD:D_1812_4532Metric" H 10050 2950 50  0001 C CNN
 F 3 "~" H 10050 2950 50  0001 C CNN
 	1    10050 2950
 	1    0    0    -1  
@@ -1098,6 +1076,48 @@ F 1 "VCC" H 3667 3173 50  0000 C CNN
 F 2 "" H 3650 3000 50  0001 C CNN
 F 3 "" H 3650 3000 50  0001 C CNN
 	1    3650 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3600 7600 3600
+Wire Wire Line
+	7600 3600 7600 3350
+$Comp
+L power:VBUS #PWR0131
+U 1 1 5F15AD9B
+P 7600 3350
+F 0 "#PWR0131" H 7600 3200 50  0001 C CNN
+F 1 "VBUS" H 7615 3523 50  0000 C CNN
+F 2 "" H 7600 3350 50  0001 C CNN
+F 3 "" H 7600 3350 50  0001 C CNN
+	1    7600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3600 10000 3600
+Wire Wire Line
+	10000 3600 10000 3700
+Connection ~ 10000 3700
+$Comp
+L Connector:Conn_01x11_Male J1
+U 1 1 5F16269B
+P 7150 4100
+F 0 "J1" H 7256 4778 50  0000 C CNN
+F 1 "Conn_01x11_Male" H 7256 4687 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 7150 4100 50  0001 C CNN
+F 3 "~" H 7150 4100 50  0001 C CNN
+	1    7150 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x11_Male J2
+U 1 1 5F16271E
+P 8900 4100
+F 0 "J2" H 9006 4778 50  0000 C CNN
+F 1 "Conn_01x11_Male" H 9006 4687 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 8900 4100 50  0001 C CNN
+F 3 "~" H 8900 4100 50  0001 C CNN
+	1    8900 4100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
