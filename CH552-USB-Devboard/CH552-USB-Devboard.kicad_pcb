@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 9)
+    (drawings 8)
     (tracks 425)
     (zones 0)
     (modules 26)
@@ -17,9 +17,9 @@
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
-    (36 B.SilkS user hide)
-    (37 F.SilkS user hide)
-    (38 B.Mask user)
+    (36 B.SilkS user)
+    (37 F.SilkS user)
+    (38 B.Mask user hide)
     (39 F.Mask user hide)
     (40 Dwgs.User user)
     (41 Cmts.User user)
@@ -29,8 +29,8 @@
     (45 Margin user)
     (46 B.CrtYd user)
     (47 F.CrtYd user)
-    (48 B.Fab user hide)
-    (49 F.Fab user hide)
+    (48 B.Fab user)
+    (49 F.Fab user)
   )
 
   (setup
@@ -59,7 +59,7 @@
     (pad_drill 0.6)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
-    (visible_elements 7FE8FF1F)
+    (visible_elements 7FFEFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -86,7 +86,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "CHUSBIE552v2_0/"))
+      (outputdirectory "ArtandSilks/"))
   )
 
   (net 0 "")
@@ -167,13 +167,13 @@
     (add_net VCC)
   )
 
-  (module Package_TO_SOT_SMD:SOT-23-5 (layer F.Cu) (tedit 5A02FF57) (tstamp 5F5951DD)
+  (module Package_TO_SOT_SMD:SOT-23-5 (layer F.Cu) (tedit 5F28384D) (tstamp 5F5951DD)
     (at 81.6 70.5)
     (descr "5-pin SOT23 package")
     (tags SOT-23-5)
     (path /5F0EED8D)
     (attr smd)
-    (fp_text reference U3 (at 0 -2.9) (layer F.SilkS)
+    (fp_text reference U3 (at 0 -2.9) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MIC5504-3.3YM5 (at 0 2.9) (layer F.Fab)
@@ -246,13 +246,13 @@
     )
   )
 
-  (module Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5B301BBE) (tstamp 5F595397)
+  (module Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder (layer F.Cu) (tedit 5F28384A) (tstamp 5F595397)
     (at 84.5 70.5 270)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5F17FC66)
     (attr smd)
-    (fp_text reference C7 (at 0 -1.43 270) (layer F.SilkS)
+    (fp_text reference C7 (at 0 -1.43 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 1uF (at 0 1.43 270) (layer F.Fab)
@@ -282,15 +282,15 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5F595369)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical (layer F.Cu) (tedit 5F283857) (tstamp 5F595369)
     (at 76.2 73.66)
     (descr "Through hole straight pin header, 1x11, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x11 2.54mm single row")
     (path /5F16269B)
-    (fp_text reference J1 (at 0 -2.33) (layer F.SilkS)
+    (fp_text reference J1 (at 0 -2.33) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x11_Male (at 0 27.73) (layer F.Fab)
+    (fp_text value Conn_01x11_Male (at 0 27.73) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 12.7 90) (layer F.Fab)
@@ -340,12 +340,12 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5F59534B)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical (layer F.Cu) (tedit 5F28385B) (tstamp 5F59534B)
     (at 93.98 73.66)
     (descr "Through hole straight pin header, 1x11, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x11 2.54mm single row")
     (path /5F16271E)
-    (fp_text reference J2 (at 0 -2.33) (layer F.SilkS)
+    (fp_text reference J2 (at 0 -2.33) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_01x11_Male (at 0 27.73) (layer F.Fab)
@@ -398,13 +398,13 @@
     )
   )
 
-  (module Diode_SMD:D_1812_4532Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5F595320)
+  (module Diode_SMD:D_1812_4532Metric (layer F.Cu) (tedit 5F283843) (tstamp 5F595320)
     (at 76.2 65.6375 90)
     (descr "Diode SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf), generated with kicad-footprint-generator")
     (tags diode)
     (path /5F141ABF)
     (attr smd)
-    (fp_text reference D4 (at 0 -2.65 90) (layer F.SilkS)
+    (fp_text reference D4 (at 0 -2.65 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value D_ALT (at 0 2.65 90) (layer F.Fab)
@@ -436,13 +436,13 @@
     )
   )
 
-  (module Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm (layer B.Cu) (tedit 5B391ABA) (tstamp 5F5975D0)
+  (module Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm (layer B.Cu) (tedit 5F2837FE) (tstamp 5F5975D0)
     (at 86.5 67.5 270)
     (descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 1 copper strip")
     (tags "solder jumper open")
     (path /5F1A134B)
     (attr virtual)
-    (fp_text reference JP1 (at 0 1.8 270) (layer B.SilkS)
+    (fp_text reference JP1 (at 0 1.8 270) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text value Jumper (at 0 -1.9 270) (layer B.Fab)
@@ -482,13 +482,13 @@
       ))
   )
 
-  (module Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm (layer B.Cu) (tedit 5B391ABA) (tstamp 5F59526D)
+  (module Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm (layer B.Cu) (tedit 5F2837F8) (tstamp 5F59526D)
     (at 84 67.5 270)
     (descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 1 copper strip")
     (tags "solder jumper open")
     (path /5F1A13E3)
     (attr virtual)
-    (fp_text reference JP2 (at 0 1.8 270) (layer B.SilkS)
+    (fp_text reference JP2 (at 0 1.8 270) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text value Jumper (at 0 -1.9 270) (layer B.Fab)
@@ -528,13 +528,13 @@
       ))
   )
 
-  (module TO_SOT_Packages_SMD:SOT-23-6 (layer F.Cu) (tedit 58CE4E7E) (tstamp 5F595168)
+  (module TO_SOT_Packages_SMD:SOT-23-6 (layer F.Cu) (tedit 5F283852) (tstamp 5F595168)
     (at 93 68.5 90)
     (descr "6-pin SOT-23 package")
     (tags SOT-23-6)
     (path /5F1BBBBE)
     (attr smd)
-    (fp_text reference Q1 (at 0 -2.9 90) (layer F.SilkS)
+    (fp_text reference Q1 (at 0 -2.9 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CPH6337 (at 0 2.9 90) (layer F.Fab)
@@ -573,10 +573,10 @@
     )
   )
 
-  (module footprint:VACON_CSP_USC16_TR (layer F.Cu) (tedit 5F14C91A) (tstamp 5F595138)
+  (module footprint:VACON_CSP_USC16_TR (layer F.Cu) (tedit 5F283846) (tstamp 5F595138)
     (at 85 66.68 180)
     (path /5F0EEE62)
-    (fp_text reference J3 (at 8.2 2.9 180) (layer F.SilkS)
+    (fp_text reference J3 (at 8.2 2.9 180) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value USB_C_Receptacle (at 0.1 -3 180) (layer F.Fab)
@@ -680,7 +680,7 @@
     )
   )
 
-  (module Button_Switch_SMD:SW_SPST_PTS810 (layer F.Cu) (tedit 5EA01ED5) (tstamp 5EAE56C2)
+  (module Button_Switch_SMD:SW_SPST_PTS810 (layer F.Cu) (tedit 5F283823) (tstamp 5EAE56C2)
     (at 85.075 95.475)
     (descr "C&K Components, PTS 810 Series, Microminiature SMT Top Actuated, http://www.ckswitches.com/media/1476/pts810.pdf")
     (tags "SPST Button Switch")
@@ -689,7 +689,7 @@
     (fp_text reference SW1 (at 0 -2.6) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 2.6) (layer F.Fab)
+    (fp_text value SW_Push (at 0 2.6) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.85 -1.85) (end 2.85 -1.85) (layer F.CrtYd) (width 0.05))
@@ -951,7 +951,7 @@
     )
   )
 
-  (module Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm (layer F.Cu) (tedit 5EA06CF8) (tstamp 5E9FFA78)
+  (module Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm (layer F.Cu) (tedit 5F283816) (tstamp 5E9FFA78)
     (at 85.179192 82.68002 90)
     (descr "16-Lead Plastic Small Outline (SL) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SOIC 1.27")
@@ -960,7 +960,7 @@
     (fp_text reference U2 (at 0 -6 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value CH552G (at -4.51998 -0.038392 180) (layer F.Fab)
+    (fp_text value CH552G (at -4.51998 -0.038392 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.075 -5.05) (end -3.45 -5.05) (layer F.SilkS) (width 0.15))
@@ -1021,7 +1021,7 @@
     )
   )
 
-  (module Housings_SSOP:TSSOP-20_4.4x6.5mm_Pitch0.65mm (layer F.Cu) (tedit 5EA06CEE) (tstamp 5E9FFA53)
+  (module Housings_SSOP:TSSOP-20_4.4x6.5mm_Pitch0.65mm (layer F.Cu) (tedit 5F28381B) (tstamp 5E9FFA53)
     (at 85.179192 79.68002 90)
     (descr "20-Lead Plastic Thin Shrink Small Outline (ST)-4.4 mm Body [TSSOP] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SSOP 0.65")
@@ -1030,7 +1030,7 @@
     (fp_text reference U1 (at 0 -4.3 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value CH552T (at 4.68002 1.220808 180) (layer F.Fab)
+    (fp_text value CH552T (at 4.68002 1.220808 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0 90) (layer F.Fab)
@@ -1329,9 +1329,6 @@
   (gr_arc (start 76 99.5) (end 74 99.5) (angle -90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 94 99.5) (end 94 101.5) (angle -90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 94 63) (end 96 63) (angle -90) (layer Edge.Cuts) (width 0.15))
-  (gr_text V1.0 (at 92.8 68.3) (layer F.SilkS)
-    (effects (font (size 1.5 1.5) (thickness 0.3)))
-  )
   (gr_line (start 94 101.5) (end 76 101.5) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 96 63) (end 96 99.5) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 76 61) (end 94 61) (layer Edge.Cuts) (width 0.15))
