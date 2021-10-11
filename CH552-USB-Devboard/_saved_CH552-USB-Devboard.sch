@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:CH552-USB-Devboard-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -18,7 +19,7 @@ L Device:R_Small R3
 U 1 1 5E91F991
 P 10500 1800
 F 0 "R3" V 10304 1800 50  0000 C CNN
-F 1 "330r" V 10395 1800 50  0000 C CNN
+F 1 "1k" V 10395 1800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10500 1800 50  0001 C CNN
 F 3 "~" H 10500 1800 50  0001 C CNN
 	1    10500 1800
@@ -77,7 +78,7 @@ L Device:R_Small R4
 U 1 1 5E9203E3
 P 10500 2150
 F 0 "R4" V 10304 2150 50  0000 C CNN
-F 1 "330r" V 10395 2150 50  0000 C CNN
+F 1 "1k" V 10395 2150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10500 2150 50  0001 C CNN
 F 3 "~" H 10500 2150 50  0001 C CNN
 	1    10500 2150
@@ -101,7 +102,7 @@ L Device:R_Small R5
 U 1 1 5E920474
 P 10450 950
 F 0 "R5" V 10254 950 50  0000 C CNN
-F 1 "300r" V 10345 950 50  0000 C CNN
+F 1 "1k" V 10345 950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10450 950 50  0001 C CNN
 F 3 "~" H 10450 950 50  0001 C CNN
 	1    10450 950 
@@ -736,7 +737,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 8200 2800 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L CH552-USB-Devboard-rescue:USB_C_Receptacle-Connector J3
+L Connector:USB_C_Receptacle J3
 U 1 1 5F0EEE62
 P 5650 2150
 F 0 "J3" H 5755 3717 50  0000 C CNN
